@@ -16,6 +16,10 @@ app = Flask(__name__)
 def home():
     return "CSV Processor Service is Running!"
 
+@app.route('/health')
+def health():
+    return jsonify({"status": "healthy", "message": "CSV processor service is running"})
+
 @app.route('/process-csv', methods=['POST'])
 def process_csv():
     try:

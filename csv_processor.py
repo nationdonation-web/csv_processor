@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from flask import Flask, request, jsonify
 import pandas as pd
 import numpy as np
@@ -15,10 +16,6 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     return "CSV Processor Service is Running!"
-
-@app.route('/health')
-def health():
-    return jsonify({"status": "healthy", "message": "CSV processor service is running"})
 
 @app.route('/process-csv', methods=['POST'])
 def process_csv():

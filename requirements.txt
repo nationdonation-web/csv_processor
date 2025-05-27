@@ -1,7 +1,6 @@
-Flask==3.0.0
-pandas==2.0.3
-numpy==1.24.4
-supabase==2.3.4
-tqdm==4.66.1
-gunicorn==21.2.0
-setuptools==69.0.3
+Flask
+pandas
+numpy
+supabase
+tqdm
+gunicorn
